@@ -13,7 +13,9 @@
 		9675B0601A0BD57E007CE446 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9675B05E1A0BD57E007CE446 /* Main.storyboard */; };
 		9675B0621A0BD57E007CE446 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9675B0611A0BD57E007CE446 /* Images.xcassets */; };
 		9675B0651A0BD57E007CE446 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9675B0631A0BD57E007CE446 /* LaunchScreen.xib */; };
-		9675B0711A0BD57E007CE446 /* LearningsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9675B0701A0BD57E007CE446 /* LearningsTests.m */; };
+		9675B07B1A0BD6F0007CE446 /* PrimeFactorsSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 9675B07A1A0BD6F0007CE446 /* PrimeFactorsSpec.m */; };
+		9675B0821A0BD82C007CE446 /* PrimeFactors.m in Sources */ = {isa = PBXBuildFile; fileRef = 9675B0811A0BD82C007CE446 /* PrimeFactors.m */; };
+		FDFF3FB60C618A42AB5E4036 /* libPods-LearningsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A3405DA6DB89A0F646FC07F0 /* libPods-LearningsTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0DC6EBD476F1788A2D64D464 /* Pods-LearningsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearningsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LearningsTests/Pods-LearningsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9675B0511A0BD57E007CE446 /* Learnings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Learnings.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9675B0551A0BD57E007CE446 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9675B0561A0BD57E007CE446 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -39,7 +42,11 @@
 		9675B0641A0BD57E007CE446 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		9675B06A1A0BD57E007CE446 /* LearningsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LearningsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9675B06F1A0BD57E007CE446 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9675B0701A0BD57E007CE446 /* LearningsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LearningsTests.m; sourceTree = "<group>"; };
+		9675B07A1A0BD6F0007CE446 /* PrimeFactorsSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrimeFactorsSpec.m; sourceTree = "<group>"; };
+		9675B0801A0BD82C007CE446 /* PrimeFactors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrimeFactors.h; sourceTree = "<group>"; };
+		9675B0811A0BD82C007CE446 /* PrimeFactors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrimeFactors.m; sourceTree = "<group>"; };
+		A3405DA6DB89A0F646FC07F0 /* libPods-LearningsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LearningsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC43D99A27573A90C810630A /* Pods-LearningsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearningsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LearningsTests/Pods-LearningsTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,18 +61,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDFF3FB60C618A42AB5E4036 /* libPods-LearningsTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8F67EE05036DF26A7395B1F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A3405DA6DB89A0F646FC07F0 /* libPods-LearningsTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9675B0481A0BD57E007CE446 = {
 			isa = PBXGroup;
 			children = (
 				9675B0531A0BD57E007CE446 /* Learnings */,
 				9675B06D1A0BD57E007CE446 /* LearningsTests */,
 				9675B0521A0BD57E007CE446 /* Products */,
+				9EC723099F9B3CD672D6722A /* Pods */,
+				8F67EE05036DF26A7395B1F5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,6 +107,8 @@
 				9675B0611A0BD57E007CE446 /* Images.xcassets */,
 				9675B0631A0BD57E007CE446 /* LaunchScreen.xib */,
 				9675B0541A0BD57E007CE446 /* Supporting Files */,
+				9675B0801A0BD82C007CE446 /* PrimeFactors.h */,
+				9675B0811A0BD82C007CE446 /* PrimeFactors.m */,
 			);
 			path = Learnings;
 			sourceTree = "<group>";
@@ -105,8 +125,8 @@
 		9675B06D1A0BD57E007CE446 /* LearningsTests */ = {
 			isa = PBXGroup;
 			children = (
-				9675B0701A0BD57E007CE446 /* LearningsTests.m */,
 				9675B06E1A0BD57E007CE446 /* Supporting Files */,
+				9675B07A1A0BD6F0007CE446 /* PrimeFactorsSpec.m */,
 			);
 			path = LearningsTests;
 			sourceTree = "<group>";
@@ -117,6 +137,15 @@
 				9675B06F1A0BD57E007CE446 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9EC723099F9B3CD672D6722A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0DC6EBD476F1788A2D64D464 /* Pods-LearningsTests.debug.xcconfig */,
+				AC43D99A27573A90C810630A /* Pods-LearningsTests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,9 +172,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9675B0771A0BD57E007CE446 /* Build configuration list for PBXNativeTarget "LearningsTests" */;
 			buildPhases = (
+				AAF410ACD0A88A0E6FD2496C /* Check Pods Manifest.lock */,
 				9675B0661A0BD57E007CE446 /* Sources */,
 				9675B0671A0BD57E007CE446 /* Frameworks */,
 				9675B0681A0BD57E007CE446 /* Resources */,
+				FA8099DBF90D1ED6D1692F2B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -214,11 +245,45 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		AAF410ACD0A88A0E6FD2496C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FA8099DBF90D1ED6D1692F2B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LearningsTests/Pods-LearningsTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9675B04D1A0BD57E007CE446 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9675B0821A0BD82C007CE446 /* PrimeFactors.m in Sources */,
 				9675B05D1A0BD57E007CE446 /* ViewController.m in Sources */,
 				9675B05A1A0BD57E007CE446 /* AppDelegate.m in Sources */,
 				9675B0571A0BD57E007CE446 /* main.m in Sources */,
@@ -229,7 +294,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9675B0711A0BD57E007CE446 /* LearningsTests.m in Sources */,
+				9675B07B1A0BD6F0007CE446 /* PrimeFactorsSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,6 +428,7 @@
 		};
 		9675B0781A0BD57E007CE446 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DC6EBD476F1788A2D64D464 /* Pods-LearningsTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -382,6 +448,7 @@
 		};
 		9675B0791A0BD57E007CE446 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC43D99A27573A90C810630A /* Pods-LearningsTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -414,6 +481,7 @@
 				9675B0761A0BD57E007CE446 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9675B0771A0BD57E007CE446 /* Build configuration list for PBXNativeTarget "LearningsTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +490,7 @@
 				9675B0791A0BD57E007CE446 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
